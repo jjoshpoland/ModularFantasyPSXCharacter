@@ -1,2 +1,56 @@
 # ModularFantasyPSXCharacter
-This repository contains documentation and sample code for the Modular Fantasy PSX Character.
+## What is in this repo?
+This repository contains documentation and sample code for the Modular Fantasy PSX Character. This documentation is currently focused on Godot, but all the guidance will apply in Unity as well. A custom Unity package for these assets is coming in the future.
+
+The sample.gd script contains some example functions you can use to manipulate the model in Godot. This is mostly for using the facial features.
+
+## What is a Modular Character?
+A modular character is a 3d model where you can swap out the pieces at runtime. This is perfect for making any game where the character needs to change their clothes, like Elder Scrolls, Red Dead Redemption, or Breath of the Wild. 
+
+This model uses a different material for every type of surface. This means that if you want to change the color or the texture of a specific piece, you are welcome to do that.
+
+Even the faces are modular - you can change the facial expression, add new facial expressions, or draw entire new faces as you desire.
+
+This model has been pre-rigged with the [ExplosiveLLC](https://www.explosive.ws/products/rpg-animation-fbx-for-godot-blender) skeleton. KayPee has made a fantastic set of animations that can be pulled directly into Godot as animation libraries and used with this model out of the box. The preview scene uses animations from the RPG character pack.
+
+## What is PSX?
+PSX is a term referring to original Sony Playstation graphics and is widely used to describe game graphics from the late 90s and early 2000s.
+
+This style uses:
+- Simple models (very low-poly)
+- Low-res textures
+- Simple rigging (4 or fewer bones per mesh part)
+
+This style is popular with game developers because it is easy to edit and to add a lot of character with simple pieces. Unlike modern stylized "low-poly" which uses a lot of polygons with hard edges to show very elegant sculpting techniques. I wanted to make this character in this style because it is so much easier to maintain and to copy this style than the popular "low-poly" style.
+
+## How do I use this character asset?
+Import the .glb or .fbx file into your game engine of choice and it should be recognized as a humanoid skeleton and be ready to go. 
+#### To make the animations work in Godot, you may need to follow a process specific to the animation pack.
+Godot's animation remapping workflow is still difficult to use.
+See this repo for how to set up Explosive LLC animations with this model. https://github.com/scotmcp/explosive.ws-to-godot
+You will need to use the bonemap in Scot's repo for the skeleton on this character to make it work with the animation import process used in Scot's repo. (Thank you to Scot for setting that up)
+
+#### Why does the character look broken when I import it?
+When you first import the model, all of the model parts are enabled at once. So the character is wearing every hat, every armor, and every shoe at the same time. You will need to go in and hide the meshes you don't want and show the meshes you do want. In the example below, you will see that I have shown a lot of plate armor pieces for the human knight, but no orc body parts.
+
+[Image here]
+
+This process is this same in Unity, just disable the GameObjects for each mesh you don't want to see.
+#### Can I just delete the meshes I don't want?
+Yes, but you don't need to. They hardly take up any memory because they are so simple and they do not occupy any video memory if they are hidden. And putting them back in (at runtime especially) is a complex operation that I have not tested.
+
+#### How do I change the color of one of the parts?
+First, I recommend creating a Standard Material for each material slot on the model. You can still use the textures I provide, but it will be much easier to manage the materials once they are in the game engine resource folders. 
+
+In Godot, simply add a new material as the Surface Material Override for that mesh. You can also change the color of the mesh once you have specified your own material.
+
+In Unity, simply swap out the material with a Unity engine material.
+
+Keep in mind that if you change the color or texture on the material, it will change for all meshes that use that material. So if you want one model to have gold plate armor and another to have rusty plate armor, you need to either use different materials or manage them in code. Different engines handle this differently:
+For Godot: https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms
+For Unity: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MaterialPropertyBlock.html
+The number of materials you use is not that important in Godot, but is extremely important in Unity due to draw calls.
+#### How do I change the faces?
+For using the different facial expressions, check out the sample.gd script for various functions for using a different face. There is blinking and talking by default but you can also just pick any face by an index value.
+
+The faces are textures that are on a sprite sheet. It is a 128x128 sprite sheet and each face is a 32x32 sprite. So there are 16 total faces by default. You can make a bigger sprite sheet if you want to add more faces or replace the sprite sheet with faces of your own. You will need to recalculate how to look at the rows and columns of faces on the sprite sheet if you change the size or quantity.
