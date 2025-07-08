@@ -1,6 +1,7 @@
 # ModularFantasyPSXCharacter
 ## What is in this repo?
 This repository contains documentation and sample code for the Modular Fantasy PSX Character. This documentation is currently focused on Godot, but all the guidance will apply in Unity as well. A custom Unity package for these assets is coming in the future.
+![Godot_v4 4 1-stable_win64_vVEVchGVe4](https://github.com/user-attachments/assets/2da89acc-7d8c-4463-aae9-67e3a53bd124)
 
 The sample.gd script contains some example functions you can use to manipulate the model in Godot. This is mostly for using the facial features.
 
@@ -29,11 +30,12 @@ Import the .glb or .fbx file into your game engine of choice and it should be re
 Godot's animation remapping workflow is still difficult to use.
 See this repo for how to set up Explosive LLC animations with this model. https://github.com/scotmcp/explosive.ws-to-godot
 You will need to use the bonemap in Scot's repo for the skeleton on this character to make it work with the animation import process used in Scot's repo. (Thank you to Scot for setting that up)
+![Godot_v4 4 1-stable_win64_UQKwQ5oNj5](https://github.com/user-attachments/assets/84eaa6a4-21c2-4c65-8af2-5932eb9b71fa)
 
 #### Why does the character look broken when I import it?
 When you first import the model, all of the model parts are enabled at once. So the character is wearing every hat, every armor, and every shoe at the same time. You will need to go in and hide the meshes you don't want and show the meshes you do want. In the example below, you will see that I have shown a lot of plate armor pieces for the human knight, but no orc body parts.
 
-[Image here]
+![Godot_v4 4 1-stable_win64_XFK0UPTzDE](https://github.com/user-attachments/assets/1e41d85b-9f81-4f45-838f-c098f754b16a)
 
 This process is this same in Unity, just disable the GameObjects for each mesh you don't want to see.
 #### Can I just delete the meshes I don't want?
@@ -54,3 +56,4 @@ The number of materials you use is not that important in Godot, but is extremely
 For using the different facial expressions, check out the sample.gd script for various functions for using a different face. There is blinking and talking by default but you can also just pick any face by an index value.
 
 The faces are textures that are on a sprite sheet. It is a 128x128 sprite sheet and each face is a 32x32 sprite. So there are 16 total faces by default. You can make a bigger sprite sheet if you want to add more faces or replace the sprite sheet with faces of your own. You will need to recalculate how to look at the rows and columns of faces on the sprite sheet if you change the size or quantity.
+![Aseprite_mqLZEAaZlw](https://github.com/user-attachments/assets/a1c59de9-b197-4a1b-a0b4-f1c561639724)
