@@ -32,16 +32,16 @@ See this repo for how to set up Explosive LLC animations with this model. https:
 You will need to use the bonemap in Scot's repo for the skeleton on this character to make it work with the animation import process used in Scot's repo. (Thank you to Scot for setting that up)
 ![Godot_v4 4 1-stable_win64_UQKwQ5oNj5](https://github.com/user-attachments/assets/84eaa6a4-21c2-4c65-8af2-5932eb9b71fa)
 
-#### Why does the character look broken when I import it?
+### Why does the character look broken when I import it?
 When you first import the model, all of the model parts are enabled at once. So the character is wearing every hat, every armor, and every shoe at the same time. You will need to go in and hide the meshes you don't want and show the meshes you do want. In the example below, you will see that I have shown a lot of plate armor pieces for the human knight, but no orc body parts.
 
 ![Godot_v4 4 1-stable_win64_XFK0UPTzDE](https://github.com/user-attachments/assets/1e41d85b-9f81-4f45-838f-c098f754b16a)
 
 This process is this same in Unity, just disable the GameObjects for each mesh you don't want to see.
-#### Can I just delete the meshes I don't want?
+### Can I just delete the meshes I don't want?
 Yes, but you don't need to. They hardly take up any memory because they are so simple and they do not occupy any video memory if they are hidden. And putting them back in (at runtime especially) is a complex operation that I have not tested.
 
-#### How do I change the color of one of the parts?
+### How do I change the color of one of the parts?
 First, I recommend creating a Standard Material for each material slot on the model. You can still use the textures I provide, but it will be much easier to manage the materials once they are in the game engine resource folders. 
 
 In Godot, simply add a new material as the Surface Material Override for that mesh. You can also change the color of the mesh once you have specified your own material.
@@ -53,7 +53,7 @@ Keep in mind that if you change the color or texture on the material, it will ch
 - For Unity: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MaterialPropertyBlock.html
 
 The number of materials you use is not that important in Godot, but is extremely important in Unity due to draw calls.
-#### How do I change the faces?
+### How do I change the faces?
 For using the different facial expressions, check out the sample.gd script for various functions for using a different face. There is blinking and talking by default but you can also just pick any face by an index value.
 
 The faces are textures that are on a sprite sheet. It is a 128x128 sprite sheet and each face is a 32x32 sprite. So there are 16 total faces by default. You can make a bigger sprite sheet if you want to add more faces or replace the sprite sheet with faces of your own. You will need to recalculate how to look at the rows and columns of faces on the sprite sheet if you change the size or quantity.
