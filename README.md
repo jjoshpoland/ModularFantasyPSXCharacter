@@ -49,8 +49,9 @@ In Godot, simply add a new material as the Surface Material Override for that me
 In Unity, simply swap out the material with a Unity engine material.
 
 Keep in mind that if you change the color or texture on the material, it will change for all meshes that use that material. So if you want one model to have gold plate armor and another to have rusty plate armor, you need to either use different materials or manage them in code. Different engines handle this differently:
-For Godot: https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms
-For Unity: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MaterialPropertyBlock.html
+- For Godot: https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms
+- For Unity: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MaterialPropertyBlock.html
+
 The number of materials you use is not that important in Godot, but is extremely important in Unity due to draw calls.
 #### How do I change the faces?
 For using the different facial expressions, check out the sample.gd script for various functions for using a different face. There is blinking and talking by default but you can also just pick any face by an index value.
