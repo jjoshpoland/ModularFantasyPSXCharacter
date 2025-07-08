@@ -49,11 +49,6 @@ func update_talk_face():
 		var rand_talking_face = randi_range(0, talking_faces.size() - 1)
 		face_mesh.set_instance_shader_parameter("offset", get_uv_offset_from_face_index(talking_faces[rand_talking_face]))
 
-func update_face_incremental():
-	face_mesh.set_instance_shader_parameter("offset", get_uv_offset_from_face_index(last_face + 1))
-	last_face = last_face + 1
-	if last_face >= 15:
-		last_face = -1
 
 ## Called on a timer to update the face to the blink face, 14 by default. Also adding some randomness to make it not too synchronized/robotic.
 func blink():
