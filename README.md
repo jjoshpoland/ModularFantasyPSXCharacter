@@ -1,4 +1,4 @@
-# ModularFantasyPSXCharacter
+# Modular Fantasy PSX Character
 ## What is in this repo?
 This repository contains documentation and sample code for the Modular Fantasy PSX Character. This documentation is currently focused on Godot, but all the guidance will apply in Unity as well. A custom Unity package for these assets is coming in the future.
 ![Godot_v4 4 1-stable_win64_vVEVchGVe4](https://github.com/user-attachments/assets/2da89acc-7d8c-4463-aae9-67e3a53bd124)
