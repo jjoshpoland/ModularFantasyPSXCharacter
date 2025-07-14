@@ -64,7 +64,7 @@ The faces are textures that are on a sprite sheet. It is a 128x128 sprite sheet 
 
 ![Godot_v4 4 1-stable_win64_hfvwaEQQjN](https://github.com/user-attachments/assets/5990f1cf-5e27-451f-b23e-b1a26a1675cd)
 
-I have set up bones for the accessory attachment that can be configured for physics forces if desired (e.g. SpringBoneSimulator3D in Godot). The bones are:
+I have set up bones for the accessory attachments that can be configured for physics forces if desired (e.g. SpringBoneSimulator3D in Godot). The bones are:
 - Root: Tail, End: Tail.001
 - Root: HipHolster_L, End: HipHolster_L.001
 - Root: HipHolster_R, End: HipHolster_R.001
