@@ -59,3 +59,13 @@ For using the different facial expressions, check out the sample.gd script for v
 
 The faces are textures that are on a sprite sheet. It is a 128x128 sprite sheet and each face is a 32x32 sprite. So there are 16 total faces by default. You can make a bigger sprite sheet if you want to add more faces or replace the sprite sheet with faces of your own. You will need to recalculate how to look at the rows and columns of faces on the sprite sheet if you change the size or quantity.
 ![Aseprite_mqLZEAaZlw](https://github.com/user-attachments/assets/a1c59de9-b197-4a1b-a0b4-f1c561639724)
+
+### Jiggle Bones
+
+![Godot_v4 4 1-stable_win64_hfvwaEQQjN](https://github.com/user-attachments/assets/5990f1cf-5e27-451f-b23e-b1a26a1675cd)
+
+I have set up bones for the accessory attachment that can be configured for physics forces if desired (e.g. SpringBoneSimulator3D in Godot). The bones are:
+- Root: Tail, End: Tail.001
+- Root: HipHolster_L, End: HipHolster_L.001
+- Root: HipHolster_R, End: HipHolster_R.001
+- Root: HeadAccessory, End: HeadAccessory.001
