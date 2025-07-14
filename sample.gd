@@ -52,7 +52,7 @@ func update_talk_face():
 
 ## Called on a timer to update the face to the blink face, 14 by default. Also adding some randomness to make it not too synchronized/robotic.
 func blink():
-	# Blinking is face 14 by default
+	# Blinking is face 14 by default, used with the provided sample shader code (faces.gdshader)
 	face_mesh.set_instance_shader_parameter("offset", get_uv_offset_from_face_index(14))
 	$BlinkTimer.wait_time = 5.0 + randf_range(-1.0, 1.0)
 	# Signals another timer to set the face back to normal after a very short blink duration
