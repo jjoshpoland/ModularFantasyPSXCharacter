@@ -12,7 +12,7 @@ This model uses a different material for every type of surface. This means that 
 
 Even the faces are modular - you can change the facial expression, add new facial expressions, or draw entire new faces as you desire.
 
-This model has been pre-rigged with the [ExplosiveLLC](https://www.explosive.ws/products/rpg-animation-fbx-for-godot-blender) skeleton. KayPee has made a fantastic set of animations that can be pulled directly into Godot as animation libraries and used with this model out of the box. The preview scene uses animations from the RPG character pack.
+This model has been pre-rigged with the [ExplosiveLLC](https://www.explosive.ws/products/rpg-animation-fbx-for-godot-blender) skeleton. KayPee has made a fantastic set of animations that can be pulled directly into Godot as animation libraries or directly into Unity's Mecanim animations and used with this model out of the box. The preview scene uses animations from the RPG character pack.
 
 ## What is PSX?
 PSX is a term referring to original Sony Playstation graphics and is widely used to describe game graphics from the late 90s and early 2000s.
