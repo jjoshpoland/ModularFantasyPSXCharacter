@@ -51,7 +51,7 @@ In Unity, simply swap out the material with a Unity engine material.
 Keep in mind that if you change the color or texture on the material, it will change for all meshes that use that material. So if you want one model to have gold plate armor and another to have rusty plate armor, you need to either use different materials or manage them in code. 
 To manage them in code, different engines handle this differently:
 - For Godot: https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms
-- For Unity: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MaterialPropertyBlock.html
+- For Unity: Built-In Renderer: https://docs.unity3d.com/6000.0/Documentation/ScriptReference/MaterialPropertyBlock.html, URP: See example code
 
 The number of materials you use is not that important in Godot, but is extremely important in Unity due to draw calls.
 ### How do I change the faces?
