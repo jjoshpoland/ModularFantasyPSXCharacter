@@ -1,3 +1,4 @@
+https://jjsteeple.itch.io/modular-fantasy-psx-character
 # Modular Fantasy PSX Character
 ## What is in this repo?
 This repository contains documentation and sample code for the Modular Fantasy PSX Character. This documentation is currently focused on Godot, but all the guidance will apply in Unity as well. A custom Unity package for these assets is coming in the future.
