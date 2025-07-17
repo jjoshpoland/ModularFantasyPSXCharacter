@@ -82,3 +82,6 @@ You can send me an email at heavyhandgames@gmail.com and I'll be making periodic
 
 ### Can I get a female version of this character?
 I will be releasing a female version of this pack. It requires reworking a lot of the models, weight painting, and all the testing that goes with that, so it will be a separate asset pack that still uses all the same code and features listed in this repo.
+
+### I have an issue/found a defect.
+Open an issue on this repo and I will analyze and address based on that.
