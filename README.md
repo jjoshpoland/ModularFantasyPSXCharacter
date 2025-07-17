@@ -3,8 +3,6 @@
 This repository contains documentation and sample code for the Modular Fantasy PSX Character. This documentation is currently focused on Godot, but all the guidance will apply in Unity as well. A custom Unity package for these assets is coming in the future.
 ![Godot_v4 4 1-stable_win64_vVEVchGVe4](https://github.com/user-attachments/assets/2da89acc-7d8c-4463-aae9-67e3a53bd124)
 
-<iframe frameborder="0" src="https://itch.io/embed/3726087?bg_color=cccccc&amp;fg_color=2e4cc3&amp;border_color=000000" width="552" height="167"><a href="https://jjsteeple.itch.io/modular-fantasy-psx-character">Modular Fantasy PSX Character by jjsteeple</a></iframe>
-
 The sample.gd script contains some example functions you can use to manipulate the model in Godot. 
 The faces.cs script contains the same content, but made for Unity.
 These are mostly for using the facial features.
