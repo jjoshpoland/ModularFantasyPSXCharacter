@@ -74,3 +74,11 @@ I have set up bones for the accessory attachments that can be configured for phy
 - Root: HipHolster_L, End: HipHolster_L.001
 - Root: HipHolster_R, End: HipHolster_R.001
 - Root: HeadAccessory, End: HeadAccessory.001
+
+### How can I add on to this character?
+You can import the file into blender and do your best.
+OR,
+You can send me an email at heavyhandgames@gmail.com and I'll be making periodic updates and potentially expansion packs based on user suggestions.
+
+### Can I get a female version of this character?
+I will be releasing a female version of this pack. It requires reworking a lot of the models, weight painting, and all the testing that goes with that, so it will be a separate asset pack that still uses all the same code and features listed in this repo.
