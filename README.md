@@ -27,7 +27,7 @@ This style uses:
 - Low-res textures
 - Simple rigging (4 or fewer bones per mesh part)
 
-This style is popular with game developers because it is easy to edit and to add a lot of character with simple pieces. Unlike modern stylized "low-poly" which uses a lot of polygons with hard edges to show very elegant sculpting techniques. I wanted to make this character in this style because it is so much easier to maintain and to copy this style than the popular "low-poly" style.
+This style is popular with game developers because it is easy to edit and to add a lot of character with simple pieces. This is distinct from modern stylized "low-poly" which uses a lot of polygons with hard edges to show very elegant sculpting techniques. I wanted to make this character in this style because it is so much easier to maintain and to copy this style than the popular "low-poly" style.
 
 ## How do I use this character asset?
 Import the .glb or .fbx file into your game engine of choice and it should be recognized as a humanoid skeleton and be ready to go. 
