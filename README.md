@@ -36,6 +36,7 @@ Import the .glb or .fbx file into your game engine of choice and it should be re
 Godot's animation remapping workflow is still difficult to use.
 See this repo for how to set up Explosive LLC animations with this model. https://github.com/scotmcp/explosive.ws-to-godot
 You will need to use the bonemap in Scot's repo for the skeleton on this character to make it work with the animation import process used in Scot's repo. (Thank you to Scot for setting that up)
+Important node: the model is oriented towards negative Y in Blender (negative Z in Godot), so you will need to make sure animations you import are also oriented that way.
 ![Godot_v4 4 1-stable_win64_UQKwQ5oNj5](https://github.com/user-attachments/assets/84eaa6a4-21c2-4c65-8af2-5932eb9b71fa)
 
 ### Why does the character look broken when I import it?
